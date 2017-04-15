@@ -1,0 +1,3057 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1160</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>字模v0.01</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_9">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget_font">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="movable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="tab_preview">
+      <attribute name="title">
+       <string>Preview</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>261</width>
+         <height>701</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>配置</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="15" column="2">
+         <widget class="QSpinBox" name="spinBox_Pre_vertBold"/>
+        </item>
+        <item row="14" column="2">
+         <widget class="QSpinBox" name="spinBox_Pre_horiBold"/>
+        </item>
+        <item row="27" column="0">
+         <widget class="QLabel" name="label_Pre_charCode">
+          <property name="text">
+           <string>字符编码：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_75">
+          <property name="text">
+           <string>宽：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="label_76">
+          <property name="text">
+           <string>高：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_74">
+          <property name="text">
+           <string>点阵大小：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>字符集：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="30" column="0" colspan="3">
+         <widget class="QTextEdit" name="textEdit_Pre_charString"/>
+        </item>
+        <item row="9" column="2">
+         <widget class="QSpinBox" name="spinBox_Pre_weightofWidth">
+          <property name="minimum">
+           <number>-8</number>
+          </property>
+          <property name="maximum">
+           <number>8</number>
+          </property>
+         </widget>
+        </item>
+        <item row="26" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>输入方式：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="32" column="0" rowspan="2" colspan="3">
+         <widget class="QPushButton" name="pushButton_do_preview">
+          <property name="text">
+           <string>预览</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="2">
+         <widget class="QSpinBox" name="spinBox_Pre_weightofHeight">
+          <property name="minimum">
+           <number>-8</number>
+          </property>
+          <property name="maximum">
+           <number>8</number>
+          </property>
+         </widget>
+        </item>
+        <item row="29" column="0">
+         <widget class="QLabel" name="label_Pre_charString">
+          <property name="text">
+           <string>字符串：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QLabel" name="label_55">
+          <property name="text">
+           <string>字形权重:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1" colspan="2">
+         <widget class="QComboBox" name="comboBox_Pre_charset">
+          <item>
+           <property name="text">
+            <string>请选择</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>GB18030</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Unicode</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="7" column="1" colspan="2">
+         <widget class="QLineEdit" name="lineEdit_Pre_width">
+          <property name="text">
+           <string>16</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="QLabel" name="label_56">
+          <property name="text">
+           <string>字形权重:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="1" colspan="2">
+         <widget class="QComboBox" name="comboBox_Pre_mode">
+          <item>
+           <property name="text">
+            <string>横向取模</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>纵向取模</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="10" column="1" colspan="2">
+         <widget class="QLineEdit" name="lineEdit_Pre_height">
+          <property name="text">
+           <string>16</string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="1" colspan="2">
+         <widget class="QComboBox" name="comboBox_Pre_order">
+          <item>
+           <property name="text">
+            <string>字节正序</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>字节倒序</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="26" column="1" colspan="2">
+         <widget class="QComboBox" name="comboBox_Pre_inputMode">
+          <item>
+           <property name="text">
+            <string>字符编码</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>字符串</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="28" column="0" colspan="3">
+         <widget class="QLineEdit" name="lineEdit_Pre_charCode"/>
+        </item>
+        <item row="16" column="0">
+         <widget class="QLabel" name="label_77">
+          <property name="text">
+           <string>取模方式：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="31" column="1">
+         <spacer name="verticalSpacer_12">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="15" column="1">
+         <widget class="QLabel" name="label_26">
+          <property name="text">
+           <string>垂直系数：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="1">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>水平系数：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="1">
+         <widget class="QLabel" name="label_34">
+          <property name="text">
+           <string>标志：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="2">
+         <widget class="QComboBox" name="comboBox_Pre_blod">
+          <item>
+           <property name="text">
+            <string>正常</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>加粗+1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>加粗+2</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="13" column="0">
+         <widget class="QLabel" name="label_47">
+          <property name="text">
+           <string>加粗调整：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="0">
+         <widget class="QLabel" name="label_78">
+          <property name="text">
+           <string>微调：</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+       <zorder>lineEdit_Pre_height</zorder>
+       <zorder>label_75</zorder>
+       <zorder>label_76</zorder>
+       <zorder>lineEdit_Pre_width</zorder>
+       <zorder>label_77</zorder>
+       <zorder>label_74</zorder>
+       <zorder>comboBox_Pre_charset</zorder>
+       <zorder>label_4</zorder>
+       <zorder>comboBox_Pre_mode</zorder>
+       <zorder>comboBox_Pre_order</zorder>
+       <zorder>label_5</zorder>
+       <zorder>comboBox_Pre_inputMode</zorder>
+       <zorder>label_Pre_charCode</zorder>
+       <zorder>label_Pre_charString</zorder>
+       <zorder>textEdit_Pre_charString</zorder>
+       <zorder>pushButton_do_preview</zorder>
+       <zorder>spinBox_Pre_weightofWidth</zorder>
+       <zorder>spinBox_Pre_weightofHeight</zorder>
+       <zorder>label_55</zorder>
+       <zorder>label_56</zorder>
+       <zorder>verticalSpacer_12</zorder>
+       <zorder>lineEdit_Pre_charCode</zorder>
+       <zorder>label_3</zorder>
+       <zorder>spinBox_Pre_horiBold</zorder>
+       <zorder>label_26</zorder>
+       <zorder>spinBox_Pre_vertBold</zorder>
+       <zorder>label_34</zorder>
+       <zorder>comboBox_Pre_blod</zorder>
+       <zorder>label_47</zorder>
+       <zorder>label_78</zorder>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_8">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>70</y>
+         <width>711</width>
+         <height>381</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>预览</string>
+       </property>
+       <widget class="QTableWidget" name="tableWidget_Pre_bitmap">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>691</width>
+          <height>341</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_31">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>10</y>
+         <width>701</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>源</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_73">
+          <property name="text">
+           <string>字体文件：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_Pre_ttfSrc"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_Pre_ttfBrs">
+          <property name="text">
+           <string>浏览</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_32">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>450</y>
+         <width>711</width>
+         <height>251</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>数据输出</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_29">
+        <item row="0" column="0">
+         <widget class="QTextEdit" name="textEdit_output"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_make">
+      <attribute name="title">
+       <string>Make</string>
+      </attribute>
+      <widget class="QPushButton" name="pushButton_Make_addConv">
+       <property name="geometry">
+        <rect>
+         <x>720</x>
+         <y>190</y>
+         <width>61</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>=&gt;</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>100</y>
+         <width>391</width>
+         <height>511</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>规则</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="3" column="3">
+         <widget class="QPushButton" name="pushButton_Make_delRule">
+          <property name="text">
+           <string>删除</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QPushButton" name="pushButton_Make_userDef">
+          <property name="text">
+           <string>自定义</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_18">
+          <property name="text">
+           <string>分类：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" rowspan="2" colspan="4">
+         <widget class="QTableWidget" name="tableWidget_Make_charsetArea"/>
+        </item>
+        <item row="0" column="1" colspan="3">
+         <widget class="QComboBox" name="comboBox_Make_charsetMbr"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_5">
+       <property name="geometry">
+        <rect>
+         <x>790</x>
+         <y>100</y>
+         <width>341</width>
+         <height>511</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>转换列表</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="2" column="0" colspan="4">
+         <widget class="QTableWidget" name="tableWidget_Make_convInfo"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButton_Make_convDesc">
+          <property name="text">
+           <string>属性</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="pushButton_Make_convMoveUp">
+          <property name="text">
+           <string>上移</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QPushButton" name="pushButton_Make_convMoveDown">
+          <property name="text">
+           <string>下移</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="0" colspan="4">
+         <widget class="QTableWidget" name="tableWidget_Make_converts"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>421</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>源标准</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_32">
+          <property name="text">
+           <string>字体文件：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="3">
+         <widget class="QPushButton" name="pushButton_Make_ttfBrs">
+          <property name="text">
+           <string>浏览</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="3">
+         <widget class="QLineEdit" name="lineEdit_Make_ttfSrc"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Make_delConv">
+       <property name="geometry">
+        <rect>
+         <x>720</x>
+         <y>350</y>
+         <width>61</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>|&lt;=</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>301</width>
+         <height>321</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>配置</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="7" column="1">
+         <widget class="QLabel" name="label_79">
+          <property name="text">
+           <string>水平：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QSpinBox" name="spinBox_Make_weightofWidth">
+          <property name="minimum">
+           <number>-8</number>
+          </property>
+          <property name="maximum">
+           <number>8</number>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="lineEdit_Make_width">
+          <property name="text">
+           <string>16</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>点阵大小：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="2">
+         <widget class="QComboBox" name="comboBox_Make_order">
+          <item>
+           <property name="text">
+            <string>字节正序</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>字节倒序</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QComboBox" name="comboBox_Make_mode">
+          <item>
+           <property name="text">
+            <string>横向取模</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>纵向取模</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="label_37">
+          <property name="text">
+           <string>取模方式：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="label_28">
+          <property name="text">
+           <string>高：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QComboBox" name="comboBox_Make_blod">
+          <item>
+           <property name="text">
+            <string>正常</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>加粗+1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>加粗+2</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_29">
+          <property name="text">
+           <string>宽：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QLineEdit" name="lineEdit_Make_height">
+          <property name="text">
+           <string>16</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>对齐：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="2">
+         <widget class="QComboBox" name="comboBox_Make_align">
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>16</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>32</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>64</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>128</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>256</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>512</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1024</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2048</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4096</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_46">
+          <property name="text">
+           <string>加粗：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QSpinBox" name="spinBox_Make_weightofHeight">
+          <property name="minimum">
+           <number>-8</number>
+          </property>
+          <property name="maximum">
+           <number>8</number>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>  区块</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="comboBox_Make_charset">
+          <item>
+           <property name="text">
+            <string>请选择</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>GB18030</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Unicode</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_57">
+          <property name="text">
+           <string>字形权重:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_fontstand">
+          <property name="text">
+           <string>字符集：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="2">
+         <widget class="QLabel" name="label_80">
+          <property name="text">
+           <string>垂直：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_81">
+          <property name="text">
+           <string>微调：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QSpinBox" name="spinBox_Make_horiBold"/>
+        </item>
+        <item row="8" column="2">
+         <widget class="QSpinBox" name="spinBox_vertBold"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_Make_userDef">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>390</y>
+         <width>301</width>
+         <height>321</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>自定义区块</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="6" column="3">
+         <widget class="QLabel" name="label_2nd_to">
+          <property name="text">
+           <string>~</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="3">
+         <widget class="QLabel" name="label_4th_to">
+          <property name="text">
+           <string>~</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QLabel" name="label_fourthByte">
+          <property name="text">
+           <string>第四字节</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLabel" name="label_secondByte">
+          <property name="text">
+           <string>第二字节</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QLabel" name="label_2ndB_lower">
+          <property name="text">
+           <string>上限</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="4">
+         <widget class="QLineEdit" name="lineEdit_4thB_upper">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="4">
+         <widget class="QLineEdit" name="lineEdit_3rdB_upper"/>
+        </item>
+        <item row="6" column="4">
+         <widget class="QLineEdit" name="lineEdit_2ndB_upper"/>
+        </item>
+        <item row="6" column="2">
+         <widget class="QLineEdit" name="lineEdit_2ndB_lower">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="3">
+         <widget class="QLabel" name="label_3rd_to">
+          <property name="text">
+           <string>~</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="2">
+         <widget class="QLineEdit" name="lineEdit_3rdB_lower">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLabel" name="label_thirdByte">
+          <property name="text">
+           <string>第三字节</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>规则名：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="2">
+         <widget class="QLabel" name="label_4thB_lower">
+          <property name="text">
+           <string>上限</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="2">
+         <widget class="QLabel" name="label_3rdB_lower">
+          <property name="text">
+           <string>上限</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLabel" name="label_firstByte">
+          <property name="text">
+           <string>第一字节</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QLabel" name="label_1st_to">
+          <property name="text">
+           <string>~</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLabel" name="label_1stB_lower">
+          <property name="text">
+           <string>上限</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QLineEdit" name="lineEdit_1stB_lower">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="4">
+         <widget class="QLineEdit" name="lineEdit_1stB_upper"/>
+        </item>
+        <item row="10" column="2">
+         <widget class="QLineEdit" name="lineEdit_4thB_lower">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QLabel" name="label_1stB_upper">
+          <property name="text">
+           <string>下限</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="4">
+         <widget class="QLabel" name="label_2ndB_upper">
+          <property name="text">
+           <string>下限</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="4">
+         <widget class="QLabel" name="label_3rdB_upper">
+          <property name="text">
+           <string>下限</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="4">
+         <widget class="QLabel" name="label_4thB_upper">
+          <property name="text">
+           <string>下限</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="2">
+         <widget class="QLineEdit" name="lineEdit_areaid"/>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <widget class="QComboBox" name="comboBox_Make_Rule"/>
+        </item>
+        <item row="1" column="4">
+         <widget class="QPushButton" name="pushButton_Make_resetRule">
+          <property name="text">
+           <string>重置</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QPushButton" name="pushButton_Make_addRule">
+          <property name="text">
+           <string>增加</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="2">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+       <zorder>label_1st_to</zorder>
+       <zorder>lineEdit_3rdB_upper</zorder>
+       <zorder>label_2nd_to</zorder>
+       <zorder>lineEdit_1stB_lower</zorder>
+       <zorder>label_3rd_to</zorder>
+       <zorder>lineEdit_4thB_upper</zorder>
+       <zorder>label_thirdByte</zorder>
+       <zorder>lineEdit_3rdB_lower</zorder>
+       <zorder>label</zorder>
+       <zorder>label_secondByte</zorder>
+       <zorder>lineEdit_2ndB_lower</zorder>
+       <zorder>label_fourthByte</zorder>
+       <zorder>lineEdit_2ndB_upper</zorder>
+       <zorder>label_3rdB_lower</zorder>
+       <zorder>label_4thB_lower</zorder>
+       <zorder>label_firstByte</zorder>
+       <zorder>lineEdit_areaid</zorder>
+       <zorder>label_1stB_lower</zorder>
+       <zorder>label_2ndB_lower</zorder>
+       <zorder>lineEdit_4thB_lower</zorder>
+       <zorder>label_4th_to</zorder>
+       <zorder>lineEdit_1stB_upper</zorder>
+       <zorder>label_1stB_upper</zorder>
+       <zorder>label_2ndB_upper</zorder>
+       <zorder>label_3rdB_upper</zorder>
+       <zorder>label_4thB_upper</zorder>
+       <zorder>comboBox_Make_Rule</zorder>
+       <zorder>pushButton_Make_resetRule</zorder>
+       <zorder>pushButton_Make_addRule</zorder>
+       <zorder>verticalSpacer_3</zorder>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_4">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>610</y>
+         <width>811</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>输出</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="8" colspan="2">
+         <widget class="QLabel" name="label_Trim_fonBinSuffix">
+          <property name="text">
+           <string>_Md5_XXXX.bin</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="7">
+         <widget class="QProgressBar" name="progressBar_Make_conv">
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="6">
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>进度：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="4" colspan="3">
+         <widget class="QLabel" name="label_Make_procNumCount">
+          <property name="text">
+           <string>0/0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>字符</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1" colspan="2">
+         <widget class="QLabel" name="label_Make_procIndexCount">
+          <property name="text">
+           <string>0/0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="8">
+         <widget class="QPushButton" name="pushButton_Make_start">
+          <property name="text">
+           <string>开始</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="9">
+         <widget class="QPushButton" name="pushButton_Make_stop">
+          <property name="text">
+           <string>取消</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_35">
+          <property name="text">
+           <string>输出文件：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="7">
+         <widget class="QLineEdit" name="lineEdit_Make_outPutFontBin"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_20">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>10</y>
+         <width>701</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string> 信息</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_19">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>版本：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <spacer name="verticalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_25">
+          <property name="text">
+           <string>(4个数字)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLineEdit" name="lineEdit_Make_fontVer"/>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="lineEdit_Make_describe"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_19">
+          <property name="text">
+           <string>描述：64个字符）</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_trim">
+      <attribute name="title">
+       <string>Trim</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>541</width>
+         <height>641</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>解析</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_11">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_49">
+          <property name="text">
+           <string>版本：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="8">
+         <widget class="QLineEdit" name="lineEdit_Trim_fontBinOffset">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="7">
+         <widget class="QLabel" name="label_51">
+          <property name="text">
+           <string>起始地址:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="9">
+         <widget class="QTableWidget" name="tableWidget_Trim_fontBinStruct"/>
+        </item>
+        <item row="1" column="1" colspan="8">
+         <widget class="QLineEdit" name="lineEdit_Trim_fontBinDesc">
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit_Trim_fontBinVer">
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_50">
+          <property name="text">
+           <string>描述：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_52">
+          <property name="text">
+           <string>MD5</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="7" colspan="2">
+         <widget class="QLabel" name="label_53">
+          <property name="text">
+           <string>（起始地址-结束）</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" colspan="6">
+         <widget class="QLineEdit" name="lineEdit_Trim_fontBinMd5"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_12">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>541</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>导入字库</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_Trim_fontBinSrc"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_Trim_fontBinBrs">
+          <property name="text">
+           <string>浏览</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_Trim_fontBinLoad">
+          <property name="text">
+           <string>导入</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_24">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>10</y>
+         <width>391</width>
+         <height>401</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>点阵信息</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_23">
+        <item row="4" column="0">
+         <widget class="QPushButton" name="pushButton_15">
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string> ↔</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pushButton_11">
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>↑</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="pushButton_13">
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>←</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QPushButton" name="pushButton_16">
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>↕</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButton_12">
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>↓</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="pushButton_14">
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>→</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" rowspan="11" colspan="4">
+         <widget class="QTableWidget" name="tableWidget_Trim_charView">
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>300</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="4">
+         <widget class="QPushButton" name="pushButton_Trim_charSave">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>6777</width>
+            <height>6777</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>保存</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="2">
+         <widget class="QPushButton" name="pushButton_Trim_charRecover">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>6777</width>
+            <height>6777</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>恢复</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="3">
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="10" column="0">
+         <widget class="QPushButton" name="pushButton_Trim_charViewZoomOut">
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QPushButton" name="pushButton_Trim_charViewZoomIn">
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0" rowspan="3">
+         <spacer name="verticalSpacer_11">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_22">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>620</y>
+         <width>571</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="title">
+        <string>导出</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_21">
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_54">
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>新字库:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pushButton_Trim_newFontBinSave">
+          <property name="maximumSize">
+           <size>
+            <width>80</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>导出新字库</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButton_Trim_sync">
+          <property name="text">
+           <string>一键同步</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="label_62">
+          <property name="text">
+           <string>请先在FONT页项设置串口参数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_Trim_newFontBin">
+          <property name="text">
+           <string>路径</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_23">
+       <property name="geometry">
+        <rect>
+         <x>960</x>
+         <y>10</y>
+         <width>167</width>
+         <height>203</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>配置</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_22">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_20">
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>字符集:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="comboBox_Trim_charset">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>请选择</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>GB18030</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Unicode</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_21">
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>宽:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEdit_Trim_width">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_22">
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>高:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEdit_Trim_height">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_48">
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>渲染：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QComboBox" name="comboBox_Trim_blod">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>正常</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>加粗+1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>加粗+2</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_23">
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>取模:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QComboBox" name="comboBox_Trim_order">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>字节正序</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>字节倒序</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QComboBox" name="comboBox_Trim_mode">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>横向取模</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>纵向取模</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_21">
+       <property name="geometry">
+        <rect>
+         <x>960</x>
+         <y>210</y>
+         <width>167</width>
+         <height>411</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>输入</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_20">
+        <item row="3" column="0">
+         <widget class="QPushButton" name="pushButton_Trim_getPreChar">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>上一个</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="pushButton_Trim_getNextChar">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>下一个</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="QTableWidget" name="tableWidget_Trim_charInfo">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButton_Trim_getChar">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>查询</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLineEdit" name="lineEdit_Trim_charCode">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QComboBox" name="comboBox_Trim_inPutMode">
+          <item>
+           <property name="text">
+            <string>字符编码</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>字符</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_10">
+       <property name="geometry">
+        <rect>
+         <x>559</x>
+         <y>399</y>
+         <width>391</width>
+         <height>221</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>数据</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_24">
+        <item row="0" column="0">
+         <widget class="QTextBrowser" name="textBrowser_Trim_charData"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_flash">
+      <attribute name="title">
+       <string>Flash</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_13">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>371</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>串口设置</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_12">
+        <item row="0" column="3">
+         <widget class="QComboBox" name="comboBox_Flash_comBaudrate"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_27">
+          <property name="text">
+           <string>波特率:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="label_30">
+          <property name="text">
+           <string>停止位:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_31">
+          <property name="text">
+           <string>端口:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QComboBox" name="comboBox_Flash_comParity"/>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_36">
+          <property name="text">
+           <string>奇偶校验:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QComboBox" name="comboBox_Flash_comFlowcontrol"/>
+        </item>
+        <item row="4" column="2">
+         <widget class="QLabel" name="label_33">
+          <property name="text">
+           <string> 流控:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="comboBox_Flash_comPort"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_38">
+          <property name="text">
+           <string>数据位:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="comboBox_Flash_comDatabits"/>
+        </item>
+        <item row="2" column="3">
+         <widget class="QComboBox" name="comboBox_Flash_comStopbits"/>
+        </item>
+        <item row="5" column="0">
+         <widget class="QPushButton" name="comboBox_Flash_comOpen">
+          <property name="text">
+           <string>打开串口</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="3">
+         <widget class="QPushButton" name="pushButton_Flash_dataLog">
+          <property name="text">
+           <string>显示收发数据</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1" colspan="2">
+         <widget class="QPushButton" name="pushButton_Flash_blMode">
+          <property name="text">
+           <string>Bootloader Mode</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_14">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>520</y>
+         <width>371</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>命令测试</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_13">
+        <item row="0" column="2">
+         <widget class="QComboBox" name="comboBox_Flash_blCmd">
+          <item>
+           <property name="text">
+            <string>GET&lt;0x00&gt;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>GV&lt;0x01&gt;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>GID&lt;0x02&gt;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>RM&lt;0x11&gt;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>GO&lt;0x21&gt;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>WM&lt;0x31&gt;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ER&lt;0x43&gt;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>EER&lt;0x44&gt;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>WP&lt;0x63&gt;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>WPUN&lt;0x73&gt;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>RDP_RPM&lt;0x82&gt;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>RDU_PRM&lt;0x92&gt;</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_Flash_blCmdArg1">
+          <property name="text">
+           <string>参数1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="lineEdit_Flash_blCmdArg1"/>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="label_Flash_blCmdArg2">
+          <property name="text">
+           <string>参数2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="lineEdit_Flash_blCmdArg2"/>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_39">
+          <property name="text">
+           <string>命令:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="lineEdit_Flash_blCmdArg3"/>
+        </item>
+        <item row="0" column="3">
+         <widget class="QPushButton" name="pushButton_Flash_blCmdSend">
+          <property name="text">
+           <string>发送</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLabel" name="label_Flash_blCmdArg3">
+          <property name="text">
+           <string>参数3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_15">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>210</y>
+         <width>371</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>固件下载</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_14">
+        <item row="3" column="0" colspan="6">
+         <widget class="QProgressBar" name="progressBar_Flash_firmwareDown">
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="6">
+         <widget class="QPushButton" name="pushButton_Flash_firmwareBrs">
+          <property name="text">
+           <string>浏览</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="6">
+         <widget class="QPushButton" name="pushButton_Flash_firmwareDown">
+          <property name="text">
+           <string>下载</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="6">
+         <widget class="QLineEdit" name="lineEdit_Flash_firmwareSrc"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_41">
+          <property name="text">
+           <string>固件大小:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_40">
+          <property name="text">
+           <string>下载地址:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="6">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>&lt;--二进制镜像</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="4">
+         <widget class="QLabel" name="label_Flash_firmwareSize">
+          <property name="text">
+           <string> ?K</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" colspan="5">
+         <widget class="QLineEdit" name="lineEdit_Flash_binDownAddr">
+          <property name="text">
+           <string>08000000</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_16">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>10</y>
+         <width>401</width>
+         <height>701</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>日志</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_15">
+        <item row="0" column="0">
+         <widget class="QTextBrowser" name="textBrowser_Flash_log"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButton_Flash_logClear">
+          <property name="text">
+           <string>清空</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_17">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>360</y>
+         <width>371</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>固件导出</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_16">
+        <item row="6" column="0" colspan="6">
+         <widget class="QProgressBar" name="progressBar_Flash_firmwareExport">
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="lineEdit_Flash_exportSize">
+          <property name="text">
+           <string>10000</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="label_42">
+          <property name="text">
+           <string>导出大小:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="6">
+         <widget class="QPushButton" name="pushButton_Flash_firmwareExport">
+          <property name="text">
+           <string>导出</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_43">
+          <property name="text">
+           <string>导出地址:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="lineEdit_Flash_exportAddr">
+          <property name="text">
+           <string>08000000</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="lineEdit_Flash_exportName"/>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLabel" name="label_44">
+          <property name="text">
+           <string>保存文件名:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_45">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>180</y>
+         <width>361</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>注意：以下操作需确保已进入Bootloader模式</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_download">
+      <attribute name="title">
+       <string>Download</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_18">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>10</y>
+         <width>401</width>
+         <height>701</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>日志</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_18">
+        <item row="0" column="0">
+         <widget class="QTextBrowser" name="textBrowser_Down_log"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButton_Down_logClear">
+          <property name="text">
+           <string>清空</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>371</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>下载</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_10">
+        <item row="1" column="0">
+         <widget class="QProgressBar" name="progressBar_Down_fontBinDl">
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLineEdit" name="lineEdit_Down_fontBinSrc"/>
+        </item>
+        <item row="0" column="3">
+         <widget class="QPushButton" name="pushButton_Down_fontBinBrs">
+          <property name="text">
+           <string>浏览</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QPushButton" name="pushButton_Down_fontBinDl">
+          <property name="text">
+           <string>下载</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="pushButton_Down_fontBinCheck">
+          <property name="text">
+           <string>校验</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>371</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>串口设置</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="0" column="3">
+         <widget class="QComboBox" name="comboBox_Down_comBaudrate"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>波特率:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>停止位:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>端口:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QComboBox" name="comboBox_Down_comParity"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>数据位:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_16">
+          <property name="text">
+           <string>奇偶校验:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QLabel" name="label_17">
+          <property name="text">
+           <string> 流控:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QComboBox" name="comboBox_Down_comFlowcontrol"/>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="comboBox_Down_comPort"/>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="comboBox_Down_comDatabits"/>
+        </item>
+        <item row="2" column="3">
+         <widget class="QComboBox" name="comboBox_Down_comStopbits"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_25">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>350</y>
+         <width>371</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>补丁制作</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_25">
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="lineEdit_Down_patchFontBinSrc"/>
+        </item>
+        <item row="1" column="3">
+         <widget class="QPushButton" name="pushButton_Down_fontBinPatchSrcBrs">
+          <property name="text">
+           <string>浏览</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <spacer name="verticalSpacer_9">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="lineEdit_Down_patchFontBinDst"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_60">
+          <property name="text">
+           <string>补丁:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QPushButton" name="pushButton_Down_fontBinPatchDstBrs">
+          <property name="text">
+           <string>浏览</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QProgressBar" name="progressBar_Down_fontBinPatchBuild">
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_59">
+          <property name="text">
+           <string>目标:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_58">
+          <property name="text">
+           <string>源:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QPushButton" name="pushButton_Down_fontBinPatchBuild">
+          <property name="text">
+           <string>生成</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="4">
+         <widget class="QLabel" name="label_24">
+          <property name="font">
+           <font>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>只有直系（相同的字模排列）才能制作</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1" colspan="2">
+         <widget class="QLabel" name="label_Down_fontBinPatch">
+          <property name="text">
+           <string>font_Md5_XXXX_XXXX.patch</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_26">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>250</y>
+         <width>371</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>导出</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_26">
+        <item row="0" column="0">
+         <widget class="QLineEdit" name="lineEdit_Down_fontBinExport"/>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButton_Down_fontBinExport">
+          <property name="text">
+           <string>导出</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QProgressBar" name="progressBar_Down_fontBinExport">
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="pushButton_Down_fontBinExportCheck">
+          <property name="text">
+           <string>校验</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <spacer name="verticalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_19">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>510</y>
+         <width>371</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>打补丁</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_17">
+        <item row="1" column="1">
+         <widget class="QProgressBar" name="progressBar_Down_fontPatchSync">
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit_Down_fontBinPatchSrc"/>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_61">
+          <property name="text">
+           <string>补丁:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="pushButton_Down_fontPatchSync">
+          <property name="text">
+           <string>同步</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="pushButton_Down_fontPatchSrcBrs">
+          <property name="text">
+           <string>浏览</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <spacer name="verticalSpacer_10">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_merge">
+      <attribute name="title">
+       <string>Merge</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_27">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>541</width>
+         <height>641</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>配置</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_27">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_63">
+          <property name="text">
+           <string>版本：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="8">
+         <widget class="QLineEdit" name="lineEdit_Merge_masterFontBinOffset">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="7">
+         <widget class="QLabel" name="label_65">
+          <property name="text">
+           <string>起始地址:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="9">
+         <widget class="QTableWidget" name="tableWidget_Merge_masterFontBinStruct"/>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit_Merge_masterFontBinVer">
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_67">
+          <property name="text">
+           <string>描述：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="8">
+         <widget class="QLineEdit" name="lineEdit_Merge_masterFontBinDesc">
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_64">
+          <property name="text">
+           <string>MD5</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="7" colspan="2">
+         <widget class="QLabel" name="label_66">
+          <property name="text">
+           <string>（起始地址-结束）</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" colspan="6">
+         <widget class="QLineEdit" name="lineEdit_Merge_masterFontBinMd5"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_28">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>541</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>主字库</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_Merge_masterFontBinSrc"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_Merge_masterFontBinSrcBrs">
+          <property name="text">
+           <string>浏览</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_Merge_masterFontBinSrcLoad">
+          <property name="text">
+           <string>导入</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_29">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>70</y>
+         <width>541</width>
+         <height>641</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>配置</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_28">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_68">
+          <property name="text">
+           <string>版本：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="8">
+         <widget class="QLineEdit" name="lineEdit_Merge_slaveFontBinOffset">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="7">
+         <widget class="QLabel" name="label_70">
+          <property name="text">
+           <string>起始地址:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="9">
+         <widget class="QTableWidget" name="tableWidget_Merge_slaveFontBinStruct"/>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit_Merge_slaveFontBinVer">
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_72">
+          <property name="text">
+           <string>描述：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="8">
+         <widget class="QLineEdit" name="lineEdit_Merge_slaveFontBinDesc">
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_69">
+          <property name="text">
+           <string>MD5</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="7" colspan="2">
+         <widget class="QLabel" name="label_71">
+          <property name="text">
+           <string>（起始地址-结束）</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" colspan="6">
+         <widget class="QLineEdit" name="lineEdit_Merge_slaveFontBinMd5"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_30">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>10</y>
+         <width>541</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>次字库</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_Merge_slaveFontBinSrc"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_Merge_slaveFontBinSrcBrs">
+          <property name="text">
+           <string>浏览</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_Merge_slaveFontBinSrcLoad">
+          <property name="text">
+           <string>导入</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Merge_masterFontBinStructAdd">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>410</y>
+         <width>21</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Merge_masterFontBinStructDel">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>500</y>
+         <width>21</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&gt;|</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Merge_masterFontBinStructMoveUp">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>230</y>
+         <width>21</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>↑</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Merge_masterFontBinStructMoveDown">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>320</y>
+         <width>21</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>↓</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Merge_masterFontBinStructSave">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>600</y>
+         <width>21</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>存</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
