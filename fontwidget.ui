@@ -854,7 +854,7 @@
          <widget class="QSpinBox" name="spinBox_Make_horiBold"/>
         </item>
         <item row="8" column="2">
-         <widget class="QSpinBox" name="spinBox_vertBold"/>
+         <widget class="QSpinBox" name="spinBox_Make_vertBold"/>
         </item>
        </layout>
       </widget>

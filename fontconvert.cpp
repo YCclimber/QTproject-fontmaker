@@ -762,6 +762,8 @@ void FontConvert::make_addConv(){
     new_fontCfg->width = lineEdit_Make_width->text().toInt();
     new_fontCfg->height = lineEdit_Make_height->text().toInt();
     new_fontCfg->bold = comboBox_Make_blod->currentIndex();
+    new_fontCfg->horiBold = spinBox_Make_horiBold->value();
+    new_fontCfg->vertBold = spinBox_Make_vertBold->value();
     new_fontCfg->strMode = comboBox_Make_mode->currentText();
     new_fontCfg->strOrder = comboBox_Make_order->currentText();
     new_fontCfg->mode = comboBox_Make_mode->currentIndex();
@@ -1980,6 +1982,7 @@ void FontConvert::down_patchBuild()
     QByteArray srcMd5 = QByteArray((const char*)((Fontlib_Header*)imageSrc)->md5,16);
     QByteArray DstMd5 = QByteArray((const char*)((Fontlib_Header*)imageDst)->md5,16);
     QString patchname = QString("font_Md5_") + srcMd5.toHex().left(4) + QString("_") + DstMd5.toHex().left(4) + QString(".patch");
+    label_Down_fontBinPatch->setText(patchname);
     Patch_Header patchHdr;
     memcpy(patchHdr.magic, "WiZaRpOsBinPatch", 16);
     memcpy(patchHdr.srcMd5, srcMd5.data(), 16);
